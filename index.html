@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <link href="styles.css" rel="stylesheet">
-        <script src="index.js"></script>
+        <script async src="index.js"></script>
         <title>League of Legends Remake</title>
     </head>
     <body>
@@ -46,5 +47,128 @@
                 <button>jouer</button>
             </div>
         </header>
+        <section class="hero" role="banner">
+            <video class="background_media" autoplay muted loop playsinline preload="auto">
+                <source src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/8ab3e227121c53aacab0c9b9f7a48adbc65db520.webm" 
+                type="video/webm"/>
+            </video>
+
+            <div class="hero_content">
+                <img src="img/league-of-legends-title.png" alt="League of Legends">
+                <button class="primary-button">jouez gratuitement</button>
+            </div>
+        </section>
+        <section class="season" role="banner">
+            <img src="img/season-background.jpg" alt="forest" class="background_media">
+            <div class="season_content">
+                <h2>saison 2</h2>
+                <h2>fleur spirituelle : au-delà acte 1</h2>
+                <p>Le chemin se révèle à ceux qui le cherchent. 
+                    Découvrez la nouvelle saison qui rend honneurs 
+                    aux mythes ioniens dès aujourd'hui.</p>
+                <button class="season-button">regardez</button>
+            </div>
+        </section>
+        <section class="news" role:"banner">
+            <div class="news_content">
+                <h1>actus à l'affiche</h1>
+                <div class="news_container">
+                    <div class="news_item">
+                        <img src="img/faker.jpg" alt="Faker">
+                        <span><strong>e-sport</strong>  19/06/2025</span>
+                        <p>Faker the best midlaner since day one.</p>
+                    </div>
+                    <div class="news_item">
+                        <img src="img/yellowstar.jpg" alt="Yellowstar">
+                        <span><strong>e-sport</strong>  17/06/2025</span>
+                        <p>Yallowstar the french support beast.</p>
+                    </div>
+                    <div class="news_item">
+                        <img src="img/caps.jpeg" alt="Caps">
+                        <span><strong>e-sport</strong>  15/06/2025</span>
+                        <p>Caps, the new Faker ?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="champions" role="banner">
+            <img src="img/assasins-background.avif" alt="assasins-background" class="background_media" id="champion-background">
+                <div class="champions-container">
+                    <h1>choisissez votre <br>champion</h1>
+                    <p>Que vous souhaitiez foncer dans la mêlée, soutenir vos alliés ou trouver un entre-deux, 
+                        vous trouverez forcément votre bonheur dans la Faille.</p>
+                    <div class="champions-buttons">
+                        <button id="more-champions">découvrir plus de champions</button>
+                        <button id="play">jouer maintenant</button>
+                    </div>
+                    <ul class="champions-list">
+                        <li>
+                            <div class="champion-item" id="assassins"
+                            data-image="0"
+                            data-champion="img/Akali.png"
+                            data-name="Akali"
+                            data-phrase="Assassin rebelle">
+                                <img src="img/assassins-logo.avif" alt="assassins">
+                                <h6>assassins</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="champion-item" id="combattants"
+                            data-image="1"
+                            data-champion="img/Yasuo.png"
+                            data-name="Yasuo"
+                            data-phrase="Disgracié">
+                                <img src="img/combattants-logo.avif" alt="combattants">
+                                <h6>combattants</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="champion-item" id="mages"
+                            data-image="2"
+                            data-champion="img/Lux.png"
+                            data-name="Lux"
+                            data-phrase="Dame de lumière">
+                                <img src="img/mages-logo.avif" alt="mages">
+                                <h6>mages</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="champion-item" id="tireurs"
+                            data-image="3"
+                            data-champion="img/Jinx.png"
+                            data-name="Jinx"
+                            data-phrase="Gâchette folle">
+                                <img src="img/assassins-logo.avif" alt="tireurs">
+                                <h6>tireurs</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="champion-item" id="supports"
+                            data-image="4"
+                            data-champion="img/Thresh.png"
+                            data-name="Thresh"
+                            data-phrase="Garde aux chaines">
+                                <img src="img/support-logo.avif" alt="supports">
+                                <h6>supports</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="champion-item" id="tanks"
+                            data-image="5"
+                            data-champion="img/Leona.png"
+                            data-name="Leona"
+                            data-phrase="Aube radieuse">
+                                <img src="img/tanks-logo.avif" alt="tanks">
+                                <h6>tanks</h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="champion-preview">
+                    <img id='champion' src="img/Akali.png" alt="Akali">
+                    <h3 id='champion-name'>Akali</h3>
+                    <p id="champion-phrase">Assassin rebelle</p>
+                </div>
+        </section>
     </body>
 </html>
